@@ -1,0 +1,26 @@
+:root { --bg: #0e0c16; --panel: #17142a; --text: #ece9f7; --muted: #a8a3c4; --gold: #e3b562; --cyan: #5fd4e8; --line: #2b2645; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+a { color: var(--cyan); }
+.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 24px;
+  border-bottom: 1px solid var(--line); background: #0b0a12; }
+.brand { color: var(--text); text-decoration: none; font-weight: 700; }
+.brand span { display: block; font-size: .78rem; letter-spacing: .14em; color: var(--gold); font-weight: 600; }
+nav { display: flex; flex-wrap: wrap; gap: 4px; }
+nav a { padding: 8px 12px; color: var(--muted); text-decoration: none; border-radius: 6px; }
+nav a:hover, nav a[aria-current] { color: var(--text); background: var(--panel); }
+main { max-width: 860px; margin: 0 auto; padding: 36px 24px 60px; }
+h1 { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.15; margin: 0 0 8px; }
+h2 { font-size: 1.2rem; margin: 30px 0 8px; color: var(--gold); }
+.kicker { color: var(--cyan); font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; margin: 0 0 8px; }
+.lead { font-size: 1.12rem; color: var(--muted); }
+.meta { color: var(--muted); margin-top: 0; }
+.apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 28px 0; }
+.apps article { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 6px 20px 16px; }
+.links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.card { display: block; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; color: var(--text); }
+.card:hover { border-color: var(--cyan); }
+.card span { display: block; color: var(--muted); font-size: .92rem; }
+.en { margin-top: 44px; padding-top: 10px; border-top: 1px solid var(--line); }
+li { margin: 4px 0; }
+footer { border-top: 1px solid var(--line); text-align: center; color: var(--muted); padding: 18px 24px; font-size: .92rem; }
